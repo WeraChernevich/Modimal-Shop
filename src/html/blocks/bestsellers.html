@@ -1,0 +1,21 @@
+<section class="bestsellers">
+    <div class="container">
+        <div class="bestsellers__title-wrapper">
+            <h2 class="bestsellers__title title">Best Sellers</h2>
+            <div class="bestsellers__link">
+                <a href="!#" class="btn btn--small">View All</a>
+            </div>
+        </div>
+        <div class="bestsellers__cards">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    @@loop('blocks/card.html', './data/products.json')
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
