@@ -34,7 +34,7 @@
 
 1.  Клонируйте репозиторий:
     ```bash
-    git clone ваш_url_репозитория
+    git clone https://github.com/WeraChernevich/Modimal-Shop.git
     ```
 2.  Перейдите в папку проекта:
     ```bash
