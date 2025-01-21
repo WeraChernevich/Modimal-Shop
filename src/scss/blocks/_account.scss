@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     gap: 24px;
+
+    @include tablet {
+        gap: 12px;
+    }
     
     a {
         display: inline-block;
@@ -10,5 +14,21 @@
 
     a:hover {
         background: var(--neutral-grayededed);
+    }
+}
+
+.account__search {
+    @include mobile {
+        display: none;
+    }
+}
+
+.account__menu {
+    display: none;
+    width: 24px;
+    height: 24px;
+
+    @include mobile {
+        display: block;
     }
 }

@@ -7,4 +7,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile {
+        margin-bottom: 8px;
+    }
+}
+
+.bestsellers__link {
+    @include mobile {
+        display: none;
+    }
 }

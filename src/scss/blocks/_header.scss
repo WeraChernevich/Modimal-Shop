@@ -1,10 +1,17 @@
 .header {
 	padding: 16px 0 18px 0;
+	position: relative;
+	z-index: 199;
+	background-color: #fff;
 
 	&__row {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	@include mobile {
+		padding: 4px 0 8px;
 	}
 }
 
@@ -13,10 +20,27 @@
 }
 
 .header__nav {
-
+	margin-left: auto;
+	@include mobile {
+		display: none;
+	}
 }
 
+.header__account {
+	&--right {
+		margin-left: auto;
+		margin-right: 24px;
 
+		@include tablet {
+			margin-right: 12px;
+		}
+
+		@include mobile {
+			order: -1;
+			margin-left: unset;
+		}
+	}
+}
 
 .header__nav-btn {
 	display: none;
